@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>Testing</title>
+</head>
+
+<body>
+   <header class="header">
+      <span class="header--title">MovieTitle</span>
+   </header>
+
+   <span class="loader header--title hide">MovieTitle</span>
+
+   <div class="container">
+      <div class="how-to-play">
+         <div class="how-to-play--title">How To Play</div>
+         <div class="how-to-play--text">
+            <p>You will be given two random images from diferent movies and a single title.</p>
+            <p>Your job is to select the image which corresponds with the movie title.</p>
+            <p>If you fail, you lose! <br> How many can you get right in a row?</p>
+         </div>
+         <div class="btn-container">
+            <div class="button play-btn">P L A Y</div>
+         </div>
+      </div>
+
+      <div class="game-screen hide">
+
+         <div class="images">
+            <div class="img-div1">
+               <svg class="svg-right hide" height="135" viewBox="0 0 128 128" width="135"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                     <circle cx="64" cy="64" fill="#a2faf3" r="45.877" />
+                     <circle cx="64" cy="64" fill="#6cf7ec" r="37.794" />
+                     <path
+                        d="m59.524 81.447a4.473 4.473 0 0 1 -3.212-1.359l-14.548-14.988a4.476 4.476 0 1 1 6.424-6.234l11.223 11.562 20.3-22.4a4.477 4.477 0 0 1 6.636 6.01l-23.5 25.942a4.481 4.481 0 0 1 -3.247 1.467z"
+                        fill="#fff" />
+                  </g>
+               </svg>
+               <svg class="svg-wrong hide" height="100" viewBox="0 0 512 512" width="100"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                     fill="#f44336" />
+                  <path
+                     d="m350.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"
+                     fill="#fafafa" />
+               </svg>
+            </div>
+            <div class="img-div2">
+               <svg class="svg-right hide" height="135" viewBox="0 0 128 128" width="135"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                     <circle cx="64" cy="64" fill="#a2faf3" r="45.877" />
+                     <circle cx="64" cy="64" fill="#6cf7ec" r="37.794" />
+                     <path
+                        d="m59.524 81.447a4.473 4.473 0 0 1 -3.212-1.359l-14.548-14.988a4.476 4.476 0 1 1 6.424-6.234l11.223 11.562 20.3-22.4a4.477 4.477 0 0 1 6.636 6.01l-23.5 25.942a4.481 4.481 0 0 1 -3.247 1.467z"
+                        fill="#fff" />
+                  </g>
+               </svg>
+               <svg class="svg-wrong hide" height="100" viewBox="0 0 512 512" width="100"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm0 0"
+                     fill="#f44336" />
+                  <path
+                     d="m350.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"
+                     fill="#fafafa" />
+               </svg>
+            </div>
+         </div>
+
+         <div class="score-div">Score: &nbsp;&nbsp;<span id="score">0</span></div>
+
+         <div class="movie-title">
+
+
+         </div>
+      </div>
+
+      <div class="lose-screen hide">
+         <div class="lose-screen--title">You scored:</div>
+         <div class="lose-screen--score"></div>
+         <div class="btns-container">
+            <div class="btn-container">
+               <a href="/">
+                  <div class="button">MENU</div>
+               </a>
+            </div>
+            <div class="btn-container">
+               <div class="button play-again-btn">PLAY AGAIN</div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+
+
+   <!-- <br>
+   <br> -->
+   <!-- <button id="test">MAKE ARRAY POPULAR MOVIES</button> -->
+   <!-- <br>
+   <br>
+   <button id="random">RETRIEVE ALL IMAGES FROM MOVIE ID</button> -->
+   <script src="index.js"></script>
+</body>
+
+</html>
