@@ -2,7 +2,12 @@
 let movies = []
 const API = '4a44fb13307675726b6448a7ff9f494a'
 
-window.addEventListener('DOMContentLoaded', async () => {
+let value
+if (typeof window !== 'undefined') {
+  value = window.localStorage.getItem('key')
+}
+
+value.addEventListener('DOMContentLoaded', async () => {
    getArrayPopularMovies(150)
 })
 
